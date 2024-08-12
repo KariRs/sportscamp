@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    background-color: rgb(56, 51, 55) !important;
+    
+    p{
+        color: white;
+    }
+    h4{
+        color: white;
+        padding: 10px;
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 850px;
+    height: 80px;
+    color: white;
+    font-family: "Raleway";
+    font-size: large;
+    margin: auto;
+
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        margin-right: 20px;
+        padding: 10px;
+    }
+    a:hover {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(160, 155, 158);
+        font-size: 16px;
+        margin-right: 20px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .logo {
+        background-color: black;
+        padding: 12px;
+        border-radius: 10px;
+    }
+}
+
+.slider {
+    background-color: black;
+    width: 900px;
+    height: 580px;
+    margin: 50px auto;
+    overflow: hidden;
+    margin-top: 0;
+
+    .slides {
+        display: flex;
+        width: 500%;
+        animation-name: banner;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        animation-delay: 2s;
+    }
+
+    .slide {
+        img {
+            width: 800px;
+            height: 580px;
+            object-fit: cover;
+            display: block;
+        }
+    }
+}
+.info-us{
+    width: 900px;
+    justify-content: center;
+    text-align: justify;
+    margin: auto;
+    margin-top: 50px;
+
+
+}
+
+h4{
+    text-align: center;
+}
+
+section {
+    width: 900px;
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+    font-family: "Raleway";
+    justify-content: center;
+
+    .container-logos {
+        gap: 10px;
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr 1fr;
+
+
+        img {
+            width: 100%;
+            border-radius: 4px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: block;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        height: 100%;
+        
+        .container-nav {
+          margin: 20px;
+        }
+        a{
+            display: block;
+        }
+    }
+    .info-us{
+        width: 100%;
+        margin-top: 0;
+        p{
+            padding: 30px;
+        }
+    }
+}

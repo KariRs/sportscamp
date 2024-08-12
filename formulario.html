@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/formulario.css">
+
+</head>
+
+<body>
+
+    <header></header>
+    <nav></nav>
+    <a href="inicio.html">Regresar</a>
+    <div class="formulario-registro">
+        <h4 class="titulo">Formulario de Registro</h4>
+        <form>
+            <section class="input-datos">
+                <input class="controles" type="text" name="nombre" id="" autocomplete="on"
+                    placeholder="Ingrese sus nombres">
+
+                <input class="controles" type="text" name="apellidos" id="" autocomplete="on"
+                    placeholder="Ingrese sus apellidos">
+
+                <input class="controles" type="text" autocomplete="on" placeholder="Ingrese su número telefónico">
+
+                <input class="controles" type="text" autocomplete="on" placeholder="Ingrese su email">
+            </section>
+
+
+            <section class="datos">
+                <!-- Crear grupo para sexo -->
+                <fieldset class="grupo">
+                    <legend>Sexo:
+                    </legend>
+                    <div class="input-group mb-20">
+                        <input type="radio" class="radio" name="sexo" value="femenino" id="sexo-femenino">
+                        <label for="sexo-femenino">Femenino</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="radio" class="radio" name="sexo" value="masculino" id="sexo-masculino">
+                        <label for="sexo-masculino">Masculino</label>
+                    </div>
+        
+            </section>
+
+            <section class="fecha-nacimiento">
+                <fieldset class="grupo">
+                    <legend>Fecha de nacimiento:
+                    </legend>
+                    <input type="date" class="controles">
+                </fieldset>
+            </section>
+
+            <section class="usuario">
+                <input type="text" class="controles" name="usuario" id="" placeholder="Ingrese su usuario">
+                <input type="password" class="controles" name="[pass]" id="" placeholder="Ingrese su contraseña">
+            </section>
+
+            <section class="seleccion">
+                <fieldset>
+                    <legend> Curso de interés
+                    </legend>
+                    <select name="seleccionar">
+                        <option value="" hidden>Seleccione</option>
+                        <option value="1">Básquetbol</option>
+                        <option value="2">Vóleibol</option>
+                        <option value="2">Danza</option>
+                        <option value="2">Gimnasia</option>
+                        <option value="2">Kárate</option>
+                        <option value="2">Natación</option>
+                    </select>
+            </section>
+
+            <section class="enviar">
+            
+                <input class="boton" type="submit" value="Enviar">
+                <input class="boton" type="reset" value="Limpiar">
+                </fieldset>
+            </section>
+
+        </form>
+
+    </div>
+
+    <footer></footer>
+
+</body>
+
+
+</body>
+
+</html>
