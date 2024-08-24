@@ -48,13 +48,21 @@ body{
     }
 }
 
+@keyframes banner {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(-100%);
+    }
+}
+
 .slider {
     background-color: black;
     width: 900px;
     height: 580px;
-    margin: 50px auto;
+    margin: 0 auto;
     overflow: hidden;
-    margin-top: 0;
 
     .slides {
         display: flex;
@@ -75,6 +83,7 @@ body{
         }
     }
 }
+
 .info-us{
     width: 900px;
     justify-content: center;

@@ -2,6 +2,7 @@
 
 /* ESTILOS ESPECIFICOS */
 
+
 .formulario-registro {
     margin-left: 30px;
     margin-right: 30px;
@@ -30,14 +31,15 @@ section {
 /* ESTILOS GENERALES */
 
 body {
-    background-color: rgb(113, 101, 110) !important;
+    background-color: rgb(56, 51, 55) !important;
     font-family: "Raleway";
+    color: white;
     h4 {
         font-size: 24px;
         text-decoration-line: none;
     }
     a {
-        color: rgb(147, 197, 184);
+        color: rgb(88, 220, 232);
     }
 }
 
@@ -75,6 +77,7 @@ select {
 section {
     margin-bottom: 1rem;
 }
+
 
 @media (max-width: 768px) {
     input {

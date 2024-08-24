@@ -144,3 +144,16 @@ section {
         }
     }
 }
+
+@media (max-width: 450px){
+    .int {
+        & .intro {
+            p {
+                padding: 0;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+
